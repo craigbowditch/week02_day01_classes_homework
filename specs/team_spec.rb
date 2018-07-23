@@ -36,4 +36,8 @@ class TeamTest < MiniTest::Test
     assert_equal(true, result)
   end
 
+  def test_wins_counted()
+    result = @team.result("win")
+    assert_equal(1, result)
+  end
 end
