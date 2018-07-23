@@ -3,6 +3,7 @@ class Student
   def initialize(name, cohort)
     @name = name
     @cohort = cohort
+
   end
 
   def name()
@@ -21,8 +22,12 @@ class Student
     @cohort = cohort
   end
 
-  def talk()
-    return "Hello!"
+  def talk(hello)
+    return hello
+  end
+
+  def favourite_language(language)
+    return "I love #{language}"
   end
 
 
