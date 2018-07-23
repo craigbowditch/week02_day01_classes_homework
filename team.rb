@@ -6,4 +6,15 @@ class Team
     @coach = coach
   end
 
+  def team_name
+    return @team_name
+  end
+
+  def player(name)
+    return name
+  end
+
+  def coach
+    return @coach
+  end  
 end
