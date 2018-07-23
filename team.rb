@@ -1,7 +1,7 @@
 class Team
 
-attr_reader :team_name, :players
-attr_accessor :coach
+  attr_reader :team_name, :players
+  attr_accessor :coach
 
   def initialize(team_name, players, coach)
     @team_name = team_name
@@ -13,4 +13,7 @@ attr_accessor :coach
     @players.push(player)
   end
 
+  def has_player(player)
+    return @players.include?(player)
+  end
 end

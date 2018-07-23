@@ -26,9 +26,14 @@ class TeamTest < MiniTest::Test
     assert_equal("Coach Wee Man", @team.coach())
   end
 
-def test_add_player()
-  @team.add_player("David")
-  assert_equal(["Craig", "John", "Paul", "David"], @team.players)
-end
+  def test_add_player()
+    @team.add_player("David")
+    assert_equal(["Craig", "John", "Paul", "David"], @team.players)
+  end
+
+  def test_is_player_in_team()
+    result = @team.has_player("Paul")
+    assert_equal(true, result)
+  end
 
 end
