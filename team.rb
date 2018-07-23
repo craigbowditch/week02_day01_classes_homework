@@ -10,11 +10,15 @@ class Team
     return @team_name
   end
 
-  def player(name)
-    return name
+  def players
+    return @players
   end
 
   def coach
     return @coach
-  end  
+  end
+
+  def set_coach(name)
+    @coach = name
+  end
 end
