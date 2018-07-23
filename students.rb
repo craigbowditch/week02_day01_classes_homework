@@ -5,7 +5,13 @@ class Student
     @cohort = cohort
   end
 
-  
+  def name()
+    return @name
+  end
+
+  def cohort()
+    return @cohort
+  end
 
 
 
