@@ -21,6 +21,10 @@ class Student
     @cohort = cohort
   end
 
+  def talk()
+    return "Hello!"
+  end
+
 
 
 
