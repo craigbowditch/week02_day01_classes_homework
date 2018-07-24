@@ -19,6 +19,7 @@ class Team
   end
 
   def result(result)
+    # if result == true
     if result == "win"
       @points += 1
     end
